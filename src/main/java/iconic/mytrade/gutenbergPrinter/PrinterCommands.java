@@ -2559,7 +2559,7 @@ public class PrinterCommands extends iconic.mytrade.gutenbergInterface.PrinterCo
     	return ( lo+"-" );
     }
     
-	public void resetAndClear() throws JposException {
+	public static void resetAndClear() throws JposException {
 		StringBuffer closestateprinter = new StringBuffer("=x");
 		fiscalPrinterDriver.executeRTDirectIo(0, 0, closestateprinter);
 		fiscalPrinterDriver.resetPrinter();
